@@ -29,7 +29,7 @@ public class Main {
             System.out.println("Would you like to convert another number? ((1) for Yes or (2) for No");
             int continueChoice = scanner.nextInt();
 
-            if (continueChoice == 0){
+            if (continueChoice == 2){
                 continueWithAnotherNumber = false;
             }
         }
