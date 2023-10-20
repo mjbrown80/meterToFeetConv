@@ -18,13 +18,11 @@ public class Main {
             double finalResult = 0;
             if (unit == 1) {
                 finalResult = userNumber * 3.281;
-                finalResult = Math.round((finalResult * .10) / .10);
-                System.out.println(userNumber + " Meter = " + finalResult+ " Feet.");
+                System.out.println(userNumber + " Meter = " + String.format("%.1f", finalResult)+ " Feet.");
 
             } else if (unit == 2) {
                 finalResult = userNumber / 3.281;
-                finalResult = Math.round((finalResult * .10) / .10);
-                System.out.println(userNumber + " Feet = " + finalResult + " Meters.");
+                System.out.println(userNumber + " Feet = " + String.format("%.1f", finalResult) + " Meters.");
             } else {
                 System.out.println("Invalid entry please try again!");
             }
