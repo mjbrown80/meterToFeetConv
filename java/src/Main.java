@@ -8,7 +8,10 @@ public class Main {
         boolean continueWithAnotherNumber = true;
 
         while(continueWithAnotherNumber) {
+            System.out.print("\u001B[35m");
+            System.out.print("\u001B[4m");
             System.out.println("Welcome to the Metric converter!");
+            System.out.print("\u001B[0m");
 
             System.out.println("Please enter a whole number: ");
             int userNumber = scanner.nextInt();
